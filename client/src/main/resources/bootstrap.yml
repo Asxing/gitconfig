@@ -1,5 +1,13 @@
-spring.cloud.config:
-  name: config
-  profile: dev
-  uri: http://localhost:8004/
-  label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+spring:
+  cloud:
+    config:
+      name: config
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: spring-cloud-config-git-server

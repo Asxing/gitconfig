@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Value("${holddie.hello}")
-    private  String  hello;
+    @Value(value = "${holddie.hello}")
+    private String hello;
 
     @RequestMapping(value = "/hello")
     public String from(){

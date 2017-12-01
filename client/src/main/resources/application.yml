@@ -3,3 +3,4 @@ spring:
     name: spring-cloud-config-git-client
 server:
   port: 8005
+

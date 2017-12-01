@@ -10,3 +10,7 @@ spring:
         git:
           uri: https://github.com/HoldDie/gitconfig/
           search-paths: configrepo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
