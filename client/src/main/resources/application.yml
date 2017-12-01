@@ -1,6 +1,18 @@
 spring:
   application:
     name: spring-cloud-config-git-client
+  cloud:
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 123456
 server:
   port: 8005
+management:
+  security:
+    enabled: false
 
